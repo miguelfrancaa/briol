@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+	box-sizing: border-box;
+}
+body,html,h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	max-width: 100%;
+}
+
+main{
+	padding: 0px;
+}
+
+.login-page{
+	background-color: #333;
+}
+
+.login-page main{
+	width: 400px;
+	max-width: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.login-page form{
+	text-align: center;
+}
+.login-page input{
+	width: 100%;
+	padding: 6px;
+	color: black;
+}
+.login-page img{
+	width: 100px;
+	position: relative;
+	margin: 0px auto 30px;
+	filter: grayscale(1) invert(1);
+	}
+.login-page label{
+	width: 100%;
+}
+.login-page input[type="submit"]{
+	width: 100%;
+	background-color: #b6ca43;
+	color: white;
+	box-shadow: none;
+	border: 0px;
+}
+
+.sidebar{
+	background-color: #333; 
+	min-height: 100vh;
+	padding: 50px 20px;
+}
+.sidebar img{
+	width: 100px;
+	position: relative;
+	margin: 0px 20px 30px;
+	filter: grayscale(1) invert(1);
+	}
+.sidebar ul.menu-admin{
+	list-style: none;
+	padding-left: 0px;
+	border-top: 1px solid #ccc;
+}
+.sidebar ul.menu-admin li{
+	width: 100%;
+	display: block;
+	padding: 10px 5px;
+	border-bottom: 1px solid #ccc;
+	color: white;
+	font-size: 9px;
+	line-height: 20px;
+	text-transform: uppercase;
+	/* border-top: 1px solid #ccc; */
+}
+.sidebar ul.menu-admin li:hover .submenu-admin{
+	display: block;
+}
+.sidebar ul.menu-admin li a:hover{
+	text-decoration: none;
+}
+.sidebar ul.menu-admin li a{
+	color: white;
+	font-size: 9px;
+	line-height: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+.sidebar ul.menu-admin li ul.submenu-admin {
+	display: none;
+	background-color: #222;
+	padding-left: 0px;
+}
+.sidebar ul.menu-admin li ul li{
+	
+}
+.sidebar ul.menu-admin li ul li a{
+	
+}
+.sidebar i{
+	font-size: 13px;
+	padding-right: 20px;
+}
+.cabecalho{
+	width: 100%;
+	background-color: #4e4e4e;
+	padding: 20px;
+	text-align: right;
+	color: white;
+    height: 60px;
+}
+.cabecalho span{
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.nopadding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.footer-admin{
+	width: 100%;
+	background-color: #4e4e4e;
+	padding: 10px;
+	text-align: right;
+	color: white;
+    height: 40px;
+}
+.footer-admin span{
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.pagina-geral{
+	min-height: calc(100vh - 100px);
+	background-color: #ebebeb;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.pagina-geral h1{margin-bottom: 10px;font-size: 25px;}
+.pagina-geral p{
+	
+}
+.pagina-geral h6{
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.pagina-geral table{
+	width: 100%;
+	background: white;
+	margin-top: 30px;
+}
+.pagina-geral table tr.head-line{
+	background: #00bcd4;
+}
+.pagina-geral table tr{
+	
+}
+.pagina-geral table tr:nth-child(even){
+	background: whitesmoke;
+}
+.pagina-geral table tr td{
+	padding: 10px;
+	text-align: left;
+}
+.pagina-geral table tr th{
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+.pagina-geral a.apagar{
+	color: #F44336;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+.pagina-geral a.editar{
+	color: #CDDC39;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+.pagina-geral .accoes-gerais{
+	padding-top: 20px;
+}
+.pagina-geral .accoes-gerais a,
+.accao{
+	background: #00bcd4;
+	padding: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 12px;
+	color: white;
+	display: inline-block;
+	border: 0px;
+}
+.pagina-geral .accoes-gerais a:hover,
+.accao:hover{
+	background: white;
+	color: #00bcd4;
+	text-decoration: none;
+}
+.campos2{
+	margin-top: 30px;
+    text-align: center;
+}
+.campos{
+	background-color: white;
+    padding: 30px 20px;
+}
+.form-controls{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.campos .form-controls input,
+.campos .form-controls label,
+.campos .form-controls select{
+	width: 100%;
+}
+.conterImg{
+	width: 100px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1280px){
+
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px){
+
+}
+
+/******* FULL HD    ********/
+@media only screen and (max-width: 1920px) {
+
+}
+/******* Portatil Landscape    ********/
+@media only screen and (max-width: 1440px) {
+
+}
+/*******  HD    ********/
+@media only screen and (max-width: 1280px) {
+
+}
+/******* iPad Landscape    ********/
+@media only screen and (max-width: 1024px) {
+
+}
+/******* iPad Portrait    ********/
+@media only screen and (max-width: 768px) {
+
+}
+/******* iPhone Plus Landscape    ********/
+@media only screen and (max-width: 896px) {
+
+}
+/******* iPhone Plus Portrait    ********/
+@media only screen and (max-width: 414px) {
+
+}
+/******* iPhone <=5 Landscape    ********/
+@media only screen and (max-width: 580px) {
+
+}
+/******* iPhone <=5 Portrait    ********/
+@media only screen and (max-width: 320px) {
+
+}

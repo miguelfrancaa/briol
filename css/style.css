@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+
+*{box-sizing: border-box;}
+html,body{padding: 0px;margin: 0px;}
+img{max-width: 100%;}
+
+header{
+	padding: 40px;
+	font-size: 20px;
+}
+
+footer{
+	background-color: #E8E7E7;
+	padding: 40px;
+	margin-top: 30px;
+	font-family: 'Red Hat Display';
+	font-weight: 400;
+}
+
+footer a{
+	color: black;
+}
+
+button {     
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;       
+}
+
+main{
+	font-family: 'Red Hat Display';
+	min-height: 80vh;
+}
+
+.sm{
+	display: none;
+}
+
+.md{
+	display: block;
+}
+
+.esq p:first-child{
+	font-size: 10px;
+}
+
+.sm p{
+	font-size: 8px;
+}
+
+.bold{
+font-weight: bold;
+}
+
+.top20px{
+	margin-top: 40px;
+}
+
+.paraver{
+	border-radius: blue px solid;
+	background-color: red;
+	min-height: 20vh;
+}
+
+ul{
+	list-style: none;
+}
+
+.logo img{
+	filter: grayscale(0%) invert(1);
+}
+
+
+.menuPrincipal a{
+	color: black;
+}
+
+.menuBriol{
+	display: none;
+}
+
+.laranja1{
+	color: #166fd6;
+}
+
+.laranja2{
+	background-color: #166fd6;
+}
+
+.menuPrincipal li{
+	padding-right: 20px;
+	font-family: 'Red Hat Display';
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.menuPrincipal{
+	position: absolute;
+	right: 0px;
+}
+
+.rightw{
+	text-align: right;
+}
+
+.hamb{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 28px;
+	height: 26px;
+	display: none;
+	z-index: 2;
+}
+
+.xis{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 28px;
+	height: 28px;
+	z-index: 2;
+	transform: translate(-10%, 30%);
+	display: none;
+}
+
+.bar{
+	width: 100%;
+	height: 5px;
+	background-color: #166fd6;
+	position: absolute;
+	border-radius: 25px;
+}
+
+.bar1{
+top: 0px;
+}
+
+.bar2{
+top: 50%;
+transform: translateY(-50%);
+}
+
+.bar3{
+bottom: 0px;
+}
+
+.bar4{
+	transform: rotate(45deg);
+	width: 130%;
+}
+
+.bar5{
+	transform: rotate(-45deg);
+	width: 130%;
+}
+
+
+.menuPrincipal.aberto{
+display: block;
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background-color: white;
+z-index: 1;
+}
+
+.menuPrincipal.aberto ul{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.xis.abertohamb{
+	display: block;
+}
+
+.hamb.fechadohamb{
+	display: none;
+}
+
+/*Main*/
+
+
+h2{
+	font-family: 'Red Hat Display';
+}
+
+.titulo{
+	color: black;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.subtitulo{
+	color: black;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+.subsubtitulo{
+	color: #166fd6;
+	line-height: 50px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 27px;
+}
+
+.cover{
+	position: relative;
+	/* height: 60vh; */
+}
+
+.coverimg{
+	background-image: url('../img/briol1.jpeg');
+	border: 10px #166fd6 solid;
+	background-size: cover;
+	background-position: center right;
+	/* height: 450px; */
+	position: relative;
+	background-repeat: no-repeat;
+	margin-left: auto;
+}
+
+.playerbox{
+	margin-top: 28vh;
+}
+
+.right{
+	position: absolute;
+	right: 15px;
+}
+
+.center{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#pause{
+	display: none;
+}
+
+.barra{
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background-color: black;
+	border-radius: 10px;
+}
+
+.enchimento{
+	position: absolute;
+	background-color: #166fd6;
+	width: 0%;
+	height: 100%;
+	border-radius: 20px;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.tempo{
+	margin-top: 20px;
+	height: 22px;
+}
+
+.relate{
+	width: 100%;
+	height: 150px;
+	background-color: white;
+	position: relative;
+}
+
+.relates{
+	margin-top: 30px;
+}
+
+.listen{
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+
+.relate1, .relate2, .relate3, .relate4, .relate5, .relate6{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	height: 90%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.relDes{
+	padding-left: 8px;
+}
+
+.titleRel{
+font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+color: black;
+}
+
+.subtitleRel{
+	color: #166fd6;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 0px;
+}
+
+.subsubtitleRet{
+	font-size: 12px;
+	line-height: 28px;
+	color: black;
+}
+
+
+.plus{
+	float: right;
+}
+
+.mais{
+	color: #166fd6;
+	font-size: 30px;
+}
+
+.clear{
+	clear: both;
+}
+
+/*EQUIPA*/
+
+#titulobriol{
+	color: #166fd6;
+}
+
+.teamImg{
+	background-image: url('../img/WUT.jpg');
+	background-size: cover;
+	transition: 0.25s;
+	background-position: center;
+}
+
+.teamImg2{
+	background-image: url('../img/NOTRUF.jpg');
+	background-size: cover;
+	transition: 0.25s;
+	background-position: center;
+}
+
+.teamImg:hover{
+	background-image: url('../img/WUT1.jpg');
+	background-size: cover;
+	transition: 0.25s;
+	background-position: center;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+}
+
+.teamImg2:hover{
+	background-image: url('../img/NOTRUF1.jpg');
+	background-size: cover;
+	transition: 0.25s;
+	background-position: center;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+}
+
+.name1{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) translateZ(20px);
+	font-size: 50px;
+	font-weight: bold;
+	transform-style: preserve-3d;
+}
+
+.name2{
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) translateZ(20px);
+	font-size: 50px;
+	font-weight: bold;
+	transform-style: preserve-3d;
+}
+
+.heightCol{
+	height: 450px;
+	margin-top: 30px;
+}
+
+.nodisplay{
+	display: none;
+}
+
+.bigText{
+	font-family: 'Red Hat Display';
+}
+
+
+/*EVENTOS*/
+
+.events{
+	margin-top: 30px;
+}
+
+.event{
+	text-align: center;
+}
+
+.tituloEvent{
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 40px;
+}
+
+.subtituloEvent{
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.subsubtituloEvent{
+	line-height: 45px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.details{
+	margin-top: 15px;
+	border: solid 4px #166fd6;
+	padding: 10px 20px;
+	font-size: 12px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.details:hover{
+	background-color: #166fd6;
+	color: white;
+}
+
+
+.marginEvent{
+	padding: 50px;
+}
+
+/*CONTACTOS*/
+
+.envio{
+	height: 650px;
+	border-radius: 10px;
+}
+
+.linecenter{
+	width: 81.5%;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.lineright{
+	position: absolute;
+	height: 5px;
+	background-color: white;
+	top: 20px;
+	width: 14%;
+	left: -26px;
+	top: 63px;
+	transform: rotate(50deg);
+}
+
+.lineleft{
+	position: absolute;
+	height: 5px;
+	background-color: white;
+	top: 20px;
+	width: 14%;
+	right: -26px;
+	top: 63px;
+	transform: rotate(-50deg);
+}
+
+.entre{
+	font-size: 45px;
+	color: white;
+	font-weight: 600;
+	padding-top: 2.7%;
+	padding-left: 9%;
+}
+
+form{
+	padding-left: 9%;
+	margin-top: 80px;
+}
+
+#fname, #femail, #fmessage{
+	color: white;
+	font-size: 20px;
+}
+
+
+
+#inname, #inemail, #inmessage{
+	background-color: #166fd6;
+	border: white 3px solid;
+	border-radius: 10px;
+	width: 91%;
+	color: white;
+}
+
+.enviar{
+	position: absolute;
+	left: 45.5%;
+	transform: translateX(-50%);
+	margin-top: 34px;
+}
+
+#sendButton{
+	background-color: #166fd6;
+	padding:  15px 32px;
+	color: white;
+	border-radius: 10px;
+	border: white 3px solid;
+}
+
+#sendButton:hover{
+	background-color: white;
+	padding:  15px 32px;
+	color: #F88114;
+	border-radius: 10px;
+	border: white 3px solid;
+}
+
+.form1, .form2, .form3{
+	margin-top: 3%;
+}
+
+.textarea{
+	height: 230px;
+}
+
+#inmessage{
+	height: 100%;
+}
+
+
+.overlay{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 1;
+}
+#alerta{
+	font-size: 25px;
+	background-color: #166fd6;
+	position: absolute;
+	text-align: center;
+	padding:  15px 32px;
+	border-radius: 10px;
+	border: white 3px solid;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	z-index: 2;
+}
+
+
+
+.fechado{
+	display: none;
+}
+
+
+/*ARQUIVO*/
+
+.ddf{
+	min-height: 80vh;
+}
+
+.monthArchive{
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+}
+
+.imgArchive img{
+	margin-top: 20px;
+}
+
+.nameArchive{
+	margin-top: 5px;
+	font-size: 22px;
+	font-weight: bold;
+	color: black;
+}
+
+.artistArchive{
+	margin-bottom: 70px;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: bold;
+	color: #166fd6;
+}
+
+
+.dataArchive{
+	font-size: 12px;
+	color: black;
+}
+
+.fixaAltura{
+
+}
+
+#txtbriol{
+		margin-bottom: 30px;	
+	}
+
+.fa:hover{
+	color: #166fd6;
+}
+
+
+
+
+/*MEDIAQUERYS*/
+
+
+/* <= 1440 HD Ready */
+@media screen and (max-width:1440px){}
+
+/* <= 1280 HD */
+@media screen and (max-width:1200px){
+	.coverimg{
+	/* height: 400px; */
+	/* width: 400px; */
+}
+
+.playerbox{
+	margin-top: 23vh;
+}
+
+}
+
+@media screen and (max-width:1200px){
+	.lineright{
+	position: absolute;
+	height: 5px;
+	background-color: white;
+	top: 20px;
+	width: 20%;
+	left: -69px;
+	top: 51px;
+	transform: rotate(50deg);
+}
+
+.lineleft{
+	position: absolute;
+	height: 5px;
+	background-color: white;
+	top: 20px;
+	width: 20%;
+	right: -69px;
+	top: 51px;
+	transform: rotate(-50deg);
+}
+
+.heightCol{
+	height: 400px;
+	margin-top: 30px;
+}
+
+.relate{
+	height: 120px;
+}
+
+}
+
+/* <= 1024 iPad Landscape */
+@media screen and (max-width:1024px){}
+
+/* <= 998 Bootstrap MD */
+@media screen and (max-width:992px){
+	.menuPrincipal{
+		display: none;
+	}
+
+	.hamb{
+		display: block;
+		margin-right: 20px;
+	}
+
+
+	.xis{
+		margin-right: 20px;
+	}
+
+
+	.menuPrincipal li{
+	text-align: center;
+	line-height: 60px;
+	padding-right: 0px;
+	}
+
+	.menuBriol{
+		display: block;
+	}
+	
+	.coverimg{
+	/* height: 350px; */
+	/* width: 350px; */
+}
+
+.playerbox{
+	margin-top: 17vh;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+	.nodisplay{
+	display: block;
+}
+
+	.teamImg2{
+	margin-top: 45px;
+}
+	.sm{
+		display: block;
+	}
+
+	.md{
+		display: none;
+	}
+
+	footer{
+	padding: 20px;
+	margin-top: 15px;
+}
+
+	.line{
+	display: none;
+	}
+
+	.envio{
+		margin-left: 15px;
+	margin-right: 15px;
+	}
+
+
+	.relate{
+	height: 90px;
+}
+
+	ul.menu{
+		padding: 0px 0px 0px 0px;;
+		margin: 0px 0px 0px 0px;
+	}
+
+	.entre{
+	font-size: 45px;
+	color: white;
+	font-weight: 600;
+	padding-top: 2.7%;
+	padding-left: 0%;
+	text-align: center;
+	}
+
+	form{
+		margin-top: 30px;
+	}
+
+	.fixaAltura .coverimg{
+		margin: auto;
+	}
+
+	.playerbox{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	}
+
+	.relates{
+		padding-left: 60px;
+	}
+
+	.relate{
+	width: 120px;
+	height: 120px;
+}
+	.changetogrid{
+		display: grid;
+	}
+
+	.blPlayer{
+		order: 2;
+	}
+
+	.blCapa{
+		order: 1;
+    	height: 330px;
+	}
+
+}
+
+/* <= 768 iPad Portrait */
+@media screen and (max-width:768px){
+
+	.fixaAltura .coverimg{
+		margin: auto;
+	}
+
+	.playerbox{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	}
+
+	.relates{
+		padding-left: 60px;
+	}
+
+	.relate{
+	width: 120px;
+	height: 120px;
+}
+	.changetogrid{
+		display: grid;
+	}
+
+	.blPlayer{
+		order: 2;
+	}
+
+	.blCapa{
+		order: 1;
+    	height: 330px;
+	}
+
+
+}
+
+/* <= 667 iPhone Landscape */
+@media screen and (max-width:667px){
+	.coverimg{
+		/* width: 325px; */
+		/* height: 325px; */
+	}
+
+	.heightCol{
+	height: 370px;
+}
+
+	#titulobriol{
+		font-size: 30px;
+	}
+
+	#txtbriol{
+		font-size: 20px;	
+	}
+
+	.name1, .name2{
+		font-size: 40px;
+	}
+
+
+	.relate{
+	width: 100px;
+	height: 100px;
+	}
+
+	
+}
+
+
+
+@media screen and (max-width:580px){
+
+	.relates{
+		padding-left: 35px;
+	}
+
+	.entre{
+		font-size: 35px;
+	}
+
+	.enviar{
+	margin-top: 42px;
+}
+
+}
+
+@media screen and (max-width:480px){
+	.relates{
+		padding-left: 25px;
+	}
+
+	.relate{
+	width: 90px;
+	height: 90px;
+}
+
+	
+}
+
+@media screen and (max-width:436px){
+	.enviar{
+	margin-top: 25px;
+}
+}
+
+
+/* <= 414 iPhone Plus Portrait */
+@media screen and (max-width:414px){
+	.coverimg{
+		/* width: 300px; */
+		/* height: 300px; */
+	}
+
+	.heightCol{
+	height: 250px;
+}
+	#titulobriol{
+		font-size: 25px;
+	}
+
+	#txtbriol{
+		font-size: 15px;	
+	}
+
+	.name1, .name2{
+		font-size: 35px;
+	}
+
+	.relates{
+		padding-left: 10px;
+	}
+
+	.relate{
+	width: 90px;
+	height: 90px;
+}
+
+
+
+}
+
+/* <= 375 iPhone Portrait */
+@media screen and (max-width:375px){
+	.coverimg{
+		/* width: 270px; */
+		/* height: 270px; */
+	}
+
+	.name1, .name2{
+		font-size: 30px;
+	}
+
+	.relates{
+		padding-left: 7px;
+	}
+
+	.relate{
+	width: 80px;
+	height: 80px;
+}
+
+}
+
+/* <= 320 iPhone 4 ao 5S Portrait */
+@media screen and (max-width:320px){
+	.coverimg{
+		/* width: 220px; */
+		/* height: 220px; */
+	}
+}
+
+
+
